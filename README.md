@@ -1,7 +1,6 @@
 # kb-warriors
 typing based RPG game, inspired by slay the spire and typeracer.
 
-<<<<<<< Updated upstream
 Group Members:
 
 Eoin Lynagh
