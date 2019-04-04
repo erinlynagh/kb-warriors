@@ -93,4 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 990628906972845397}
-  moveSpeed: 2
+  moveSpeed: 5

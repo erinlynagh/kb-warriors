@@ -19,10 +19,6 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (currentWord.isCompleted())
-        {
-            AddWord();
-        }
     }
 
     public void AddWord()
@@ -56,10 +52,11 @@ public class GameController : MonoBehaviour
             }
         }
 
-        if (hasCurrentWord && currentWord.isCompleted())
+        if (hasCurrentWord && currentWord.IsCompleted())
         {
             hasCurrentWord = false;
             words.Remove(currentWord);
+            AddWord();
 
         }
 

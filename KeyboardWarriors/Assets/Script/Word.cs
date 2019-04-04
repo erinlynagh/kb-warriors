@@ -30,7 +30,7 @@ public class Word {
         display.RemoveLetter();
     }
 
-    public bool isCompleted()
+    public bool IsCompleted()
     {
         bool isCompleted = (typeIndex >= word.Length);
         if (isCompleted)
