@@ -60,12 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ClickStage.cs" />
     <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\RandomBackgroundGenerator.cs" />
     <Compile Include="Assets\Script\BGM.cs" />
     <Compile Include="Assets\Script\HelpFunction.cs" />
     <Compile Include="Assets\Script\MainController.cs" />
     <Compile Include="Assets\Script\RandomWordGenerator.cs" />
     <Compile Include="Assets\Script\Word.cs" />
+    <Compile Include="Assets\StageGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
