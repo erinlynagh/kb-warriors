@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\ClickStage.cs" />
     <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\RandomBackgroundGenerator.cs" />
     <Compile Include="Assets\Script\BadEvent.cs" />
     <Compile Include="Assets\Script\BGM.cs" />
     <Compile Include="Assets\Script\GoodEvent.cs" />
