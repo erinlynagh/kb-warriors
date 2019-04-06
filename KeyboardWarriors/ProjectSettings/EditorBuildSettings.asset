@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingScreen.unity
     guid: 57a533e56688cea4f9c727653c71ad52
   - enabled: 1
+    path: Assets/Scenes/GoodEventScreen.unity
+    guid: 8ba2b81d8e064bb46a2643d3ea54cff2
+  - enabled: 1
+    path: Assets/Scenes/BadEventScreen.unity
+    guid: af29f50b207ab26478026f3636a9fea1
+  - enabled: 1
     path: Assets/Scenes/GameScreen.unity
     guid: dc5ce5c861f68e948a4090fe39489b0c
   m_configObjects: {}

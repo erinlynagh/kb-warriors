@@ -271,7 +271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1382793419}
-        m_MethodName: changeScene
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -687,7 +687,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 81d430f2ba2209f4bb8dad05dabfb0ef, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ff225b59b7b2c1e4ba9a53ed521351f7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -898,8 +898,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1382793418}
   - component: {fileID: 1382793417}
-  - component: {fileID: 1382793416}
   - component: {fileID: 1382793419}
+  - component: {fileID: 1382793416}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
