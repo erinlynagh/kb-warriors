@@ -24,7 +24,7 @@ public class Userdata : MonoBehaviour
     }
 
     public static string Name;
-    public static int score;
+    public static int score = 0;
 
     private void GetInput(string input)
     {

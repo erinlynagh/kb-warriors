@@ -9,6 +9,7 @@ public class Word {
     public string word;
     private int typeIndex;
 
+
     WordDisplay display;
 
 

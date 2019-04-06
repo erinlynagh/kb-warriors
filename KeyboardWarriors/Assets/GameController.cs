@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameController : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class GameController : MonoBehaviour
     private bool hasCurrentWord;
     private Word currentWord;
 
+    public int wordCount = 0;
+
     private void Start()
     {
         AddWord();
@@ -19,6 +23,10 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        if (wordCount > 2)
+        {
+            SceneManager.LoadScene("StageScreen");
+        }
     }
 
     public void AddWord()
@@ -56,6 +64,7 @@ public class GameController : MonoBehaviour
         {
             hasCurrentWord = false;
             words.Remove(currentWord);
+            wordCount += 1;
             AddWord();
 
         }
