@@ -9,8 +9,18 @@ public class StageGenerator : MonoBehaviour
 
     void Start()
     {
-        int rand = Random.Range(0,3);
-        Instantiate(objects[0], Level1Spots[rand], Quaternion.identity);
+        int randObject = Random.Range(0, objects.Length);
+        int randStage = Random.Range(0, Level1Spots.Length);
+
+        int randObject2 = Random.Range(0, objects.Length);
+        int randStage2 = Random.Range(0, Level1Spots.Length);
+
+        int randObject3 = Random.Range(0, objects.Length);
+        int randStage3 = Random.Range(0, Level1Spots.Length);
+
+        Instantiate(objects[randObject], Level1Spots[randStage], Quaternion.identity);
+        Instantiate(objects[randObject2], Level1Spots[randStage2], Quaternion.identity);
+        Instantiate(objects[randObject3], Level1Spots[randStage3], Quaternion.identity);
     }
 
     void Update()

@@ -402,10 +402,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - {fileID: 301983957227209550, guid: 933a17e918a6dba418a295a9696fc662, type: 3}
+  - {fileID: 301983957227209550, guid: 933a17e918a6dba418a295a9696fc662, type: 3}
+  - {fileID: 301983957227209550, guid: 933a17e918a6dba418a295a9696fc662, type: 3}
   Level1Spots:
   - {x: -4.46, y: -4.3, z: 0}
   - {x: 6.23, y: -4.35, z: 0}
   - {x: 7.67, y: -2.12, z: 0}
+  - {x: 8.7, y: 4.05, z: -0.16}
+  - {x: 4.2, y: 3.8, z: -0.16}
+  - {x: -1.04, y: 3.84, z: -0.16}
+  - {x: -8.6, y: 1.58, z: 0}
+  - {x: -5.82, y: -1.36, z: 0}
+  - {x: -3.55, y: 1.82, z: 0}
+  - {x: -2.35, y: 0.16, z: 0}
+  - {x: 5.51, y: 0.27, z: 0}
+  - {x: 1.37, y: -1.64, z: 0}
 --- !u!1 &1437676346
 GameObject:
   m_ObjectHideFlags: 0
