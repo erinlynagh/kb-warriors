@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/GoodEventScreen.unity
-=======
-- path: Assets/Scenes/GameScreen.unity
->>>>>>> 1f7363243dd1d2402e61d79ee7d7b06e5039efe9
+- path: Assets/Scenes/MainScreen.unity
   isLoaded: 1
   isActive: 1
