@@ -8,6 +8,6 @@ public class BadEvent : MonoBehaviour
 {
     private void Awake()
     {
-        Userdata.ScoreUpdate(Random.Range(-300, -200));
+        Userdata.setCurrentScore(Random.Range(-300, -200));
     }
 }

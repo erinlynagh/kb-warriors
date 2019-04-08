@@ -12,34 +12,44 @@ public class Userdata : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    // public InputField mainInputfield;
+
     void Start()
     {
-        var input = gameObject.GetComponent<InputField>();
-        input.onEndEdit.AddListener(GetInput);
+        // mainInputfield.text = "Enter text there";
     }
 
     private void Update()
     {
+        // setUserName(mainInputfield.text);
         tester();
     }
 
-    public static string Name;
-    public static int score = 0;
+    public static string userName;
+    public static int currentScore = 0;
+    public static int lifepoint = 4;
 
-    private void GetInput(string input)
+
+    private void setUserName(string name)
     {
-        Name = input;
+        userName = name;
     }
 
-    public static void ScoreUpdate(int points)
+    public static void setCurrentScore(int points)
     {
-        score += points;
+        currentScore += points;
+    }
+
+    public static void setlifepoint(int life)
+    {
+        lifepoint += life;
     }
 
     public void tester()
     {
-        Debug.Log(Name);
-        Debug.Log(score);
+        Debug.Log(userName);
+        Debug.Log(currentScore);
+        Debug.Log(lifepoint);
     }
 
 }

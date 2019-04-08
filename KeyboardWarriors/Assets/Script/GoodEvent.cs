@@ -8,6 +8,6 @@ public class GoodEvent : MonoBehaviour
 {
     private void Awake()
     {
-        Userdata.ScoreUpdate(Random.Range(200, 300));
+        Userdata.setCurrentScore(Random.Range(200, 300));
     }
 }
