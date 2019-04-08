@@ -27,6 +27,19 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene("StageScreen");
         }
+
+        if  (hasCurrentWord && currentWord.IsCompleted()){ 
+            hasCurrentWord = false;
+            words.Remove(currentWord);
+            wordCount += 1;
+            AddWord();
+        } else if (hasCurrentWord && WordDisplay.wordPosition < -8)
+        {
+            hasCurrentWord = false;
+            words.Remove(currentWord);
+            wordCount += 1;
+            AddWord();
+        }
     }
 
     public void AddWord()
@@ -60,14 +73,6 @@ public class GameController : MonoBehaviour
             }
         }
 
-        if (hasCurrentWord && currentWord.IsCompleted())
-        {
-            hasCurrentWord = false;
-            words.Remove(currentWord);
-            wordCount += 1;
-            AddWord();
-
-        }
 
     }
 
