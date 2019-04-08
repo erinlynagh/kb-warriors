@@ -28,6 +28,12 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("StageScreen");
         }
 
+        if (Userdata.lifepoint <= 0)
+        {
+            SceneManager.LoadScene("MainScreen");
+            Userdata.lifepoint = 4;
+        }
+
         if  (hasCurrentWord && currentWord.IsCompleted()){ 
             hasCurrentWord = false;
             words.Remove(currentWord);
@@ -38,6 +44,7 @@ public class GameController : MonoBehaviour
             hasCurrentWord = false;
             words.Remove(currentWord);
             wordCount += 1;
+            Userdata.setlifepoint(-1);
             AddWord();
         }
     }
