@@ -7,18 +7,7 @@ public class DashboardIO : MonoBehaviour
 {
     private static string FILEPATH = "Assets/Resources/test.txt";
     private static char DELIMITER = ',';
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public static List<Score> readScoresFromFile()
     {
         StreamReader file = new StreamReader(FILEPATH);
@@ -30,17 +19,19 @@ public class DashboardIO : MonoBehaviour
             string[] record = line.Trim().Split(DELIMITER);
             records.Add(new Score(record[0], int.Parse(record[1]), record[2]));
         }
+        file.Close();
 
         return records;
     }
 
     public static void writeScoresToFile(List<Score> records)
     {
-        StreamWriter file = new StreamWriter(FILEPATH);
+        StreamWriter file = new StreamWriter(FILEPATH, false);
         foreach (Score record in records)
         {
             file.WriteLine(record.userName + DELIMITER + record.score + DELIMITER + record.timestamp);
         }
+        file.Close();
     }
 
 }
