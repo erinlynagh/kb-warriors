@@ -65,10 +65,13 @@
     <Compile Include="Assets\RandomBackgroundGenerator.cs" />
     <Compile Include="Assets\Script\BadEvent.cs" />
     <Compile Include="Assets\Script\BGM.cs" />
+    <Compile Include="Assets\Script\DashboardIO.cs" />
     <Compile Include="Assets\Script\GoodEvent.cs" />
     <Compile Include="Assets\Script\HelpFunction.cs" />
+    <Compile Include="Assets\Script\InputUserName.cs" />
     <Compile Include="Assets\Script\MainController.cs" />
     <Compile Include="Assets\Script\RandomWordGenerator.cs" />
+    <Compile Include="Assets\Script\Score.cs" />
     <Compile Include="Assets\Script\Userdata.cs" />
     <Compile Include="Assets\Script\Word.cs" />
     <Compile Include="Assets\StageGenerator.cs" />

@@ -30,7 +30,7 @@ public class Userdata : MonoBehaviour
     public static int lifepoint = 4;
 
 
-    private void setUserName(string name)
+    public static void setUserName(string name)
     {
         userName = name;
     }
