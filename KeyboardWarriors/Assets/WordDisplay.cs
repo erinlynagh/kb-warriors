@@ -8,6 +8,7 @@ public class WordDisplay : MonoBehaviour
 
     public Text text;
     public float moveSpeed = 0.5f;
+    public static float wordPosition;
 
     public void SetWord(string word)
     {
@@ -34,6 +35,7 @@ public class WordDisplay : MonoBehaviour
     void Update()
     {
         transform.Translate(-moveSpeed*Time.deltaTime, 0f,0f);
+        wordPosition = transform.position.x;
     }
 
 }
