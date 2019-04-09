@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class ScoreHistory : MonoBehaviour
 {
-    private List<Score> records = DashboardIO.readScoresFromFile();
+    private List<Score> records;
+
+    public ScoreHistory() {
+        records = DashboardIO.readScoresFromFile();
+    }
 
     public List<Score> getRecord()
     {
