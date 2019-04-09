@@ -17,16 +17,17 @@ public class ScoreHistory : MonoBehaviour
 
     public void addScore(Score record)
     {
-        if (records.Count == 0 || record.score > records[records.Count - 1].score)
+        if (records.Count == 0 || record.score < records[records.Count - 1].score)
         {
             records.Add(record);
         }
         else {
             for (int i = 0; i < records.Count; i++)
             {
-                if (record.score <= records[records.Count - 1].score)
+                if (record.score >= records[records.Count - 1].score)
                 {
                     records.Insert(i, record);
+                    break;
                 }
             }
         }

@@ -16,13 +16,25 @@ public class GameController : MonoBehaviour
 
     public int wordCount = 0;
 
+    public int rewardPoint;
+
+
     private void Start()
     {
         AddWord();
+        if (SceneManager.GetActiveScene().name == "GameScreen")
+        {
+            rewardPoint = Random.Range(500, 600);
+        }
+        else {
+            rewardPoint = Random.Range(1000,2000);
+        }
     }
 
     private void Update()
     {
+
+
         if (wordCount > 2)
         {
             SceneManager.LoadScene("StageScreen");
@@ -30,7 +42,9 @@ public class GameController : MonoBehaviour
 
         if (Userdata.lifepoint <= 0)
         {
-            SceneManager.LoadScene("MainScreen");
+            Score score = new Score(Userdata.userName,Userdata.currentScore, "04 10");
+            ScoreController.scoreHistory.addScore(score);
+            SceneManager.LoadScene("Dashboard");
             Userdata.lifepoint = 4;
         }
 
