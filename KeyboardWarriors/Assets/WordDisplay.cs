@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WordDisplay : MonoBehaviour
 {
 
     public Text text;
-    public float moveSpeed = 0.5f;
+    public float moveSpeed;
     public static float wordPosition;
 
     public void SetWord(string word)
@@ -29,7 +30,13 @@ public class WordDisplay : MonoBehaviour
 
     void Start()
     {
-        
+        if (SceneManager.GetActiveScene().name == "GameScreen")
+        {
+            moveSpeed = 4;
+        }
+        else {
+            moveSpeed = 15;
+        }
     }
 
     void Update()

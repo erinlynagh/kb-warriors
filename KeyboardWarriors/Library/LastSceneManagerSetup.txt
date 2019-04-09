@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/StageScreen.unity
+- path: Assets/Scenes/BonusScreen.unity
   isLoaded: 1
   isActive: 1
