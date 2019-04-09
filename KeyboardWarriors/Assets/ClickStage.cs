@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ClickStage : MonoBehaviour
 {
+    private string[] stages = { "GameScreen", "BonusScreen", "GoodEventScreen", "BadEventScreen" };
     private void OnMouseUp()
     {
-        SceneManager.LoadScene("GameScreen");
+        SceneManager.LoadScene(stages[Random.Range(0,stages.Length)]);
     }
 }

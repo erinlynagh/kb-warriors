@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/BonusScreen.unity
+    guid: e910cdb314588e94b9986e4bb1ecfb00
   m_configObjects: {}
