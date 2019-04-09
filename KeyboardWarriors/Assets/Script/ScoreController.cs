@@ -7,7 +7,7 @@ using System.IO;
 public class ScoreController : MonoBehaviour
 {
     public Text dashbaord;
-    private ScoreHistory scoreHistory = new ScoreHistory();
+    public static ScoreHistory scoreHistory = new ScoreHistory();
 
 
     private void Start()
